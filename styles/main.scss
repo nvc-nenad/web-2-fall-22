@@ -1,0 +1,46 @@
+@import "./vendor/normalize";
+@import "./partials/colors";
+@import "./partials/mixins";
+@import "./partials/typography";
+
+body {
+  font-family: $font-primary;
+}
+
+.navigation {
+  background-color: $bg-dark;
+  padding: 15px;
+  nav {
+    display: inline;
+    a {
+      color: $font-light;
+    }
+  }
+  div {
+    color: $font-light;
+    display: inline;
+  }
+}
+
+.container {
+  padding: 1rem;
+  button {
+    @include primary-btn($primary-btn);
+  }
+  h1 {
+    font-family: $font-secondary;
+    color: $font-secondary-color;
+  }
+}
+
+.orange-btn {
+  @include primary-btn($secondary-btn);
+}
+
+
+// Media queries
+@media (min-width: 1024px) {
+  .navigation {
+    background-color: blue;
+  }
+}

@@ -1,0 +1,8 @@
+@mixin primary-btn($color) {
+    background-color: $color;
+    color: lighten($color, 40%);
+    border: 1px solid darken($color, 10%);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
