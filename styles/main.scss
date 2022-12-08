@@ -2,45 +2,43 @@
 @import "./partials/colors";
 @import "./partials/mixins";
 @import "./partials/typography";
+@import "./partials/animations";
 
-body {
-  font-family: $font-primary;
-}
-
-.navigation {
-  background-color: $bg-dark;
-  padding: 15px;
-  nav {
-    display: inline;
-    a {
-      color: $font-light;
-    }
-  }
-  div {
-    color: $font-light;
-    display: inline;
-  }
-}
-
-.container {
+body,html {
   padding: 1rem;
-  button {
-    @include primary-btn($primary-btn);
-  }
-  h1 {
-    font-family: $font-secondary;
-    color: $font-secondary-color;
+  font-family: $font-primary;
+  height: 100vh;
+}
+
+button {
+  margin-top: 2rem;
+  background-color: rgb(108, 165, 86);
+  color: white;
+  border: 1px solid rgb(76, 109, 63);
+  border-radius: 7px;
+  padding: 3px 7px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(76, 109, 63);
   }
 }
 
-.orange-btn {
-  @include primary-btn($secondary-btn);
+.content {
+  margin-bottom: 3rem;
+}
+
+.big-red {
+  font-size: 2rem;
+  color: red;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
 }
 
 
-// Media queries
+// Media queries (1024px and larger)
 @media (min-width: 1024px) {
-  .navigation {
-    background-color: blue;
-  }
+
 }

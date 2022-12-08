@@ -1,0 +1,28 @@
+// Slides the element to the right
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(150px) translateY(0);
+  }
+  100% {
+    transform: translateX(150px) translateY(200px);
+  }
+}
+
+// rotates the element full circle
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    // opacity: 0;
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: blue;
+    color: white;
+  }
+}
